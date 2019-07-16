@@ -1,0 +1,21 @@
+<!--file name : index.html-->
+<!--pwd : /project_name/app/templates/main/index.html-->
+<html>
+    <head>
+        사업자번호 생성<br>
+    </head>
+    <body>
+        sandbox에서 사용할 사업자 번호 갯수를 입력해주세요.
+        <form name="frm">
+            <input type="text" id="number" value=""/>
+            <input type="button" value="선택" onclick="random()"/>
+        </form>
+
+    </body>
+<script>
+    function random(){
+        var number = document.getElementById("number");
+        location.href="/random2/"+number.value;
+    }
+</script>
+</html>
